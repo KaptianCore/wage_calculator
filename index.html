@@ -25,39 +25,27 @@
     <h1>Wage Calculator</h1>
     <h5>Calculate The Amount Of Pay You Will Recieve.</h3>
     <script src="js/scripts.js"></script>
-    <form id="wageform" action="#" onsubmit="return pay_calc();">
-        <label for="wday_hours">Weekday Hours</label><br>
-        <input type="number" id="wday_hours" name="wday_hours"><br>
+    <form id="wageform" action="#" onsubmit="return pay_calc()">
+        <label for="wdayhours">Weekday Hours</label><br>
+        <input type="number" id="wdayhours" name="wdayhours"><br>
 
-        <label for="sat_hours">Saturday Hours</label><br>
-        <input type="number" id=sat_hours" name="sat_hours"><br>
+        <label for="sathours">Saturday Hours</label><br>
+        <input type="number" id=sathours" name="sathours"><br>
 
-        <label for="sun_hours">Sunday Hours</label><br>
-        <input type="number" id="sun_hours" name="sun_hours"><br>
+        <label for="sunhours">Sunday Hours</label><br>
+        <input type="number" id="sunhours" name="sunhours"><br>
 
-        <label for="pub_hours">Public Holiday Hours</label><br>
-        <input type="number" id="pub_hours" name="pub_hours"><br>
+        <label for="pubhours">Public Holiday Hours</label><br>
+        <input type="number" id="pubhours" name="pubhours"><br>
 
         <input type="submit" value="Calculate Wage">
     </form>
-    <!-- 
-        form:
-        label (Weekday Hours)
-        form input for number or slider
-        label(Saturday Hours)
-        form input for number or slider
-        label(Sunday Hours)
-        form input for number or slider
-        label(Public Holiday Hours)
-        form input for number or slider
-
-        h3 (Income For This Pay Period:)
-        h5 (Weekdays Hours (hour value): $value)
-        h5 (Saturday Hours (hour value): $value)
-        h5 (Sunday Hours (hour value): $value)
-        h5 (Public Holiday Hours (hour value): $value)
-        h5 (Total Pay For Hours (total hour value): $value)
-     -->
+    <h3>Income For This Pay Period:</h3>
+    <h5 id="wd_out">Weekdays Hours</h5>
+    <h5 id="sa_out">Saturday Hours</h5>
+    <h5 id="su_out">Sunday Hours</h5>
+    <h5 id="p_out">Public Holiday Hours</h5>
+    <h5 id="total">Total Pay</h5>
   </center>
 </body>
 </html>
