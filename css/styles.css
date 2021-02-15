@@ -3,13 +3,13 @@
   .input {
     position: absolute;
     left: 0px;
-    width: 70%;
+    width: 80%;
   }
   
   .output {
     position: absolute;
     right: 0px;
-    width: 70%;
+    width: 90%;
   }
 
   h6 {
