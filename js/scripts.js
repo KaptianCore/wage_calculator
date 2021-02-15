@@ -11,6 +11,7 @@ var weekdays = 12.04;
 var saturday = 14.448;
 var sunday = 16.8560;
 var public_holiday = 24.08;
+var superann_rate = 0.095 // Do the decimal value of the percentage
 function pay_calc(form_data) {
     // Hours
     let wd_hours = parseInt(document.querySelector("input[name='wdayhours']").value, 10);
@@ -24,7 +25,8 @@ function pay_calc(form_data) {
     let sun_total = sun_hours * weekdays;
     let pub_total = pub_hours * weekdays;
     let total = wd_total + sat_total + sun_total + pub_total;
-    let superann = (total * 0.095)
+    let superann = (total * superann_rate)
+    let superann_rate_fixed = superann_rate * 100
     console.log(superann)
     // Enter Values
     document.querySelector("#wd_out").innerHTML = `Weekdays Hours (${wd_hours} hrs): $${(wd_total).toFixed(2)}`;
@@ -32,5 +34,5 @@ function pay_calc(form_data) {
     document.querySelector("#su_out").innerHTML = `Sunday Hours (${sun_hours} hrs): $${(sun_total).toFixed(2)}`;
     document.querySelector("#p_out").innerHTML = `Public Holiday Hours (${pub_hours} hrs): $${(pub_total).toFixed(2)}`;
     document.querySelector("#total").innerHTML = `Total Pay For Hours (${total_hours} hrs): $${(total).toFixed(2)}`;
-    document.querySelector("#super").innerHTML = `Superannuation: $${(superann).toFixed(2)}`;
+    document.querySelector("#super").innerHTML = `Superannuation (${superann_rate_fixed}%): $${(superann).toFixed(2)}`;
 }

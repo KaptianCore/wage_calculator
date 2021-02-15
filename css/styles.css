@@ -3,11 +3,25 @@
   .input {
     position: absolute;
     left: 0px;
-    width: 50%;
+    width: 70%;
   }
   
   .output {
     position: absolute;
     right: 0px;
-    width: 50%;
+    width: 70%;
+  }
+
+  h6 {
+    margin: 5px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    margin: 5px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
