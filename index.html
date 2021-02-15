@@ -24,7 +24,10 @@
   <center>
     <h1>Wage Calculator</h1>
     <h5>Calculate The Amount Of Pay You Will Recieve.</h3>
+    </center>
     <script src="js/scripts.js"></script>
+    <div class="input">
+      <center>
     <form id="wageform" action="#" onsubmit="return pay_calc()">
         <label for="wdayhours">Weekday Hours</label><br>
         <input type="number" id="wdayhours" name="wdayhours"><br>
@@ -40,13 +43,16 @@
 
         <input type="submit" value="Calculate Wage">
     </form>
-    <h3>Income For This Pay Period:</h3>
-    <h5 id="wd_out">Weekdays Hours: $0</h5>
-    <h5 id="sa_out">Saturday Hours: $0</h5>
-    <h5 id="su_out">Sunday Hours: $0</h5>
-    <h5 id="p_out">Public Holiday Hours: $0</h5>
-    <h5 id="super">Superannuation: $0</h5>
-    <h5 id="total">Total Pay: $0</h5>
-  </center>
+  </div>
+</center>
+    <div class="output">
+    <h4>Income For This Pay Period:</h3>
+    <h6 id="wd_out">Weekdays Hours: $0</h6>
+    <h6 id="sa_out">Saturday Hours: $0</h6>
+    <h6 id="su_out">Sunday Hours: $0</h6>
+    <h6 id="p_out">Public Holiday Hours: $0</h6>
+    <h6 id="super">Superannuation: $0</h6>
+    <h6 id="total">Total Pay: $0</h6>
+  </div>
 </body>
 </html>

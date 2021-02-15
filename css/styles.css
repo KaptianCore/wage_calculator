@@ -1,0 +1,13 @@
+/* Pattern styles */
+  
+  .input {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+  }
+  
+  .output {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+  }
