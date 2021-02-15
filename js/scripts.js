@@ -24,12 +24,13 @@ function pay_calc(form_data) {
     let sun_total = sun_hours * weekdays;
     let pub_total = pub_hours * weekdays;
     let total = wd_total + sat_total + sun_total + pub_total;
-    let superann = "do the calculations"
+    let superann = (total * 0.095)
+    console.log(superann)
     // Enter Values
     document.querySelector("#wd_out").innerHTML = `Weekdays Hours (${wd_hours} hrs): $${(wd_total).toFixed(2)}`;
     document.querySelector("#sa_out").innerHTML = `Saturday Hours (${sat_hours} hrs): $${(sat_total).toFixed(2)}`;
     document.querySelector("#su_out").innerHTML = `Sunday Hours (${sun_hours} hrs): $${(sun_total).toFixed(2)}`;
     document.querySelector("#p_out").innerHTML = `Public Holiday Hours (${pub_hours} hrs): $${(pub_total).toFixed(2)}`;
     document.querySelector("#total").innerHTML = `Total Pay For Hours (${total_hours} hrs): $${(total).toFixed(2)}`;
-    document.querySelector("#total").innerHTML = `Superannuation: $${(superann).toFixed(2)}`;
+    document.querySelector("#super").innerHTML = `Superannuation: $${(superann).toFixed(2)}`;
 }
